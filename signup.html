@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      form div {
+        padding: 5px;
+      }
+      #myform label.error{
+        color:lightcoral;
+        padding:5px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="./signup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Sign-up Form</h2>
+      </div>
+      <div class="form">
+        <form id="myform">
+          <div class="content-first-name">
+            <label for="firstName">First Name :</label>
+            <input type="text" id="firstName" name="firstName"/>
+          </div>
+          <div class="content-last-name">
+            <label for="lastName">Last Name :</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+          <div class="content-user">
+            <label for="userName">User Name :</label>
+            <input type="text" id="userName" name="userName" />
+          </div>
+          <div class="content-password">
+            <label for="passeord">Password: </label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div class="content-confirm-password">
+            <label for="passeord">Confirm Password: </label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+            />
+          </div>
+          <div class="content-email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="content-agree">
+            <label for="agree"> Please agree to our policy</label>
+            <input type="checkbox" id="agree" name="agree" value="agreed" />
+          </div>
+          <div class="news">
+            <div class="news-heading">
+              <p style="display: inline-block">
+                I'd like to receive the newsletter
+              </p>
+              <input
+                type="checkbox"
+                id="news-heading"
+                name="news_heading"
+                value="news-heading"
+              />
+            </div>
+            <div class="news-content" style="display: none">
+              <p>Topics (select atleast two):</p>
+              <label for="marketflash">
+                <input
+                  type="checkbox"
+                  id="marketflash"
+                  name="marketflash"
+                  value="Martet Flash"
+                />
+                Marketflash
+              </label>
+              <label for="fuzz">
+                <input
+                  type="checkbox"
+                  id="fuzz"
+                  name="fuzz"
+                  value="Latest Fuzz"
+                />
+                Latest Fuzz
+              </label>
+              <label for="digester">
+                <input
+                  type="checkbox"
+                  id="digester"
+                  name="digester"
+                  value=" Digester Mail"
+                />
+                Mailing list digester
+              </label>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="submit" id="btnsubmit" value="SUBMIT" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
